@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* body { */
+    /* background: #000;
+    color: #fff;
+} */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #ffb923;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #402f2b;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    transition: .2s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #291e1d;
+}
+
+section {
+    min-height: 100vh;
+    /* padding: 10rem 9% 2rem; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.all-heading {
+    /* display: flex; */
+    /* font-size: 10rem; */
+    /* color: #ef6e12; */
+    /* margin-bottom: 30px; */
+}
+
+.home {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1), 
+        rgba(0,0,0,0.1)), 
+        url("./small-jumbotron.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    text-align: center;
+}
+
+.home-text h1 {
+    color: #402f2b;
+    font-size: 7rem;
+    /* margin: 10px auto 15px; */
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    font-weight: 800;  
+}
+.home-text h1 span {
+    color: #ef6e12;
+}
+
+.home-text p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #402f2b;
+}
+
+.home-text h2 {
+    color: #402f2b;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.home-text h2 span {
+    color: #ef6e12;
+}
+
+.hire-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #402f2b;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.hire-btn:hover {
+    background-color: #ffb923;
+    color: #402f2b;
+}
+
+.home-text a {
+    font-size: 18px;
+}
+
+
+
+
+
+.about, .portfolio {
+    background: #191717;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #402f2b;
+}
+
+
+
+
+
+/* SOCIAL MEDIA */
+aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #ffb923;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+aside .social-media li {
+    list-style-type: none;
+}
+
+aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all .1 ease-in-out;
+}
+
+aside .social-media li a:hover {
+    color: #291e1d;
+
+}
+
+
+
+/* ====== ABOUT SECTION ============== */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10rem 20% 2rem;
+}
+
+.about-heading {
+    font-size: 7rem;
+}
+
+.about-text h2, h3 {
+    color: #ffb923;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 3rem;
+}
+
+.about-text p {
+    color: #eaeaea;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-text hr {
+    border: 1px solid #eaeaea;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-text .tech-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: '\1F44D';
+    padding-left: 1em;
+    flex: 1;
+    color: #eaeaea;
+    font-size: 2rem;
+    margin-left: 7em;
+}
+
+.tech-ul-container {
+    display: flex;
+}
+
+.tech-list::before {
+    content: '';
+    margin-left: 0.5em;
+}
+
+/* Services */
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10rem 20% 2rem;
+}
+
+.services-heading {
+    font-size: 7rem;
+}
+
+.services-text h2 {
+    color: #291e1d;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+/* Portfolio */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10rem 20% 2rem;
+}
+
+.portfolio-heading {
+    font-size: 7rem;
+}
+
+.portfolio-text h2 {
+    color: #ffb923;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10.5rem 20% 2rem;
+}
+
+.contact-heading {
+    font-size: 7rem;
+}
+
+.contact-text h2 {
+    color: #291e1d;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #291e1d;
+    min-height: 10px;
+    color: #eaeaea;
+    padding: 1rem 20%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 183, 35, 0.75);
+        opacity: 100%;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    /* Hero Section */
+    .home-text h1 {
+        color: #402f2b;
+        font-size: 5.5rem;
+        /* margin: 10px auto 15px; */
+        margin-top: 10px;
+        margin-bottom: 15px; 
+        font-weight: 800;  
+    }
+
+    .about-text .tech-ul {
+        margin-left: 1.7em;
+    }
+}
+
